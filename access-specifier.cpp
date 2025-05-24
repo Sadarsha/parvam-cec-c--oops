@@ -27,10 +27,18 @@ class Bank{
            }
            //setter
            void  widthdrawAmount( int account,int Amount){
+            if(Amount<= balance){
+    
+            
             balance -= Amount;
              cout<<"the amount has been withdraw sucessfilly!" <<endl;
 
            }
+          else{
+             cout<< "Insufficient balance cannot withdraw"<<endl;
+
+          }
+        }
            //getter
            void checkBalance(){
              cout<<"Bank Balance:" << balance <<endl;
